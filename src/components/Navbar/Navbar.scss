@@ -1,0 +1,56 @@
+.nav{
+    color: white;
+    background-color: #010409;
+    fill: white;
+
+    &--profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+
+        h3{
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        &__name{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+
+            &__svgrayas{
+                fill: #7d8590;
+                border: #7d8590 1px solid;
+                padding: 8px;
+                border-radius: 5px;
+            }
+        }
+
+        &__more{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            input{
+                border: #7d8590 2px solid;
+                background-color: #010409;
+                width: 350px;
+                height: 32px;
+                border-radius: 5px;
+            }
+
+            input::placeholder{
+                padding: 6px;
+                font-size: 14px;
+                font-weight: 540;
+            }
+        }
+    }
+
+    .line{
+        border-right: #7d8590 solid 2px;
+        margin-inline:0.25rem, 4px;
+    }
+}

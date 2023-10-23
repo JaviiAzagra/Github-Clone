@@ -8,17 +8,15 @@ const Navbar = () => {
         <div className="nav--profile">
           <div className="nav--profile__name">
             <svg
-              height="18"
               aria-hidden="true"
+              height="16"
+              viewBox="0 0 16 16"
               version="1.1"
-              width="18"
+              width="16"
               data-view-component="true"
-              class="octicon octicon-mark-github v-align-middle color-fg-default"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              className="nav--profile__name__svgrayas"
+              class="nav--profile__name__svgrayas octicon octicon-three-bars Button-visual"
             >
-              <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+              <path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"></path>
             </svg>
             <svg
               height="32"
@@ -40,7 +38,30 @@ const Navbar = () => {
               placeholder="🔍 Type / to search"
             ></input>
             <div className="line"></div>
-            <button>+</button>
+            <button>
+              <svg
+                aria-hidden="true"
+                height="16"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+                data-view-component="true"
+                class="octicon octicon-plus"
+              >
+                <path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path>
+              </svg>
+              <svg
+                aria-hidden="true"
+                height="16"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+                data-view-component="true"
+                class="octicon octicon-triangle-down"
+              >
+                <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </nav>

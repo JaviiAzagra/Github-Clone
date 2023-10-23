@@ -34,7 +34,7 @@
             gap: 20px;
 
             input{
-                border: #7d8590 2px solid;
+                border: #7d8590 1px solid;
                 background-color: #010409;
                 width: 350px;
                 height: 32px;
@@ -46,11 +46,22 @@
                 font-size: 14px;
                 font-weight: 540;
             }
+
+            button{
+                border: #7d8590 1px solid;
+                background-color: #010409;
+                border-radius: 5px;
+                fill: #7d8590;
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                font-size: 15px;
+            }
         }
     }
 
     .line{
-        border-right: #7d8590 solid 2px;
+        border-right: #7d8590 solid 0.1px;
         margin-inline:0.25rem, 4px;
     }
 }

@@ -1,0 +1,212 @@
+.overview{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 40px;
+
+    &--left{
+        min-width: 296px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        img{
+            border-radius: 50%;
+            width: 296px;
+        }
+
+        &__names{
+            line-height: 8px;
+            h3{
+               color: #7d8491;
+               font-weight: 400; 
+            }
+        }
+
+        &__button{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        button{
+            width: 296px;
+            height: 32px;
+            background-color: #21262D;
+            color: #bec6cf;
+            border: #363a43 1px solid;
+            border-radius: 7px; 
+        }
+        button:hover{
+            background-color: #30363D;
+            border: #8B949E 1px solid;
+        }
+
+        &__stats{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            span{
+                font-weight: 700;
+                color: white;
+            }
+
+            p{
+                color: #7d8491;
+                font-size: 14px;
+            }
+
+            svg{
+               fill: #7d8491;
+            }
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 14px;
+
+            a{
+                text-decoration: none;
+                color:white;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+            }
+
+            svg{
+                fill: #7d8491;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color: rgb(8, 143, 239);
+            }
+        }
+
+        &__sponsors{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-weight: 600;
+            }
+            img{
+                width: 35px;
+            }
+        }
+
+        &__achievements{
+            width: 296px;
+            p{
+                font-weight: 600;
+            }
+            img{
+                width: 64px;
+            }
+
+            &__beta{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                p{
+                    border: 1px solid greenyellow;
+                    border-radius: 20px;
+                    width: 41px;
+                    text-align: center;
+                    color: greenyellow;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 2px;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgb(8, 143, 239);
+                    font-size: 12px;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+        
+        &__organizations{
+
+            p{
+                font-weight: 600;
+            }
+            img{
+                width: 32px;
+                border-radius: 7px;
+            }
+        }
+        
+    }
+
+    &--right{
+        min-width: 896px;
+        display: flex;
+        flex-direction: column;
+
+        &__readmeprofile{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid #7d8491;
+            border-radius: 7px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+            p{
+                color: white;
+                font-size: 12px;
+            }
+            span{
+               color: #7d8491; 
+            }
+
+            &__imgs{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                img{
+                    height: 28px;
+                }
+            }
+
+            &__info{
+                color: white;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    font-size: 14px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: rgb(8, 143, 239);
+                }
+            }
+        }
+    }
+
+}
+
+.line{
+    border-bottom: #35393e 0.1rem solid;
+    padding-top: 20px;        
+}
+
+.line2{
+    border-bottom: #35393e 0.1rem solid;
+    padding-top: 5px;        
+}

@@ -157,7 +157,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            border: 1px solid #7d8491;
+            border: 1px solid #393c42;
             border-radius: 7px;
             padding-left: 20px;
             padding-right: 20px;
@@ -183,6 +183,13 @@
 
             &__info{
                 color: white;
+
+                span{
+                    background-color: #343843;
+                    color: white;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
 
                 ul{
                     display: flex;

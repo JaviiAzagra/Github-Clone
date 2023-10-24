@@ -1,5 +1,6 @@
 import React from "react";
 import "./Overview.scss";
+/* import Table from "./Table"; */
 
 const Overview = () => {
   return (
@@ -176,13 +177,48 @@ const Overview = () => {
               </li>
               <li>🏢 Software Engineer (Full Stack), in Madrid ESP</li>
               <li>
-                🧰 I build with: JavaScript React, Vite.js, Angular, Node ...
+                🧰 I build with: <span>JavaScript</span>, <span>React</span>,{" "}
+                <span>SCSS</span>, <span>Angular</span>, <span>Node</span> ...
               </li>
               <li>⚡ I enjoy travel, driving, sports, and programming ;)</li>
               <li>📫 Reach out to me: javiazagra12@gmail.com</li>
             </ul>
           </div>
+          <div className="overview--right__panels">
+            <p align="center">
+              <img
+                align="center"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=javiiazagra&theme=one_dark_pro&show_icons=true&locale=en&layout=compact"
+                alt="javiiazagra"
+              />
+            </p>
+            <p align="center">
+              <img
+                align="center"
+                src="https://github-readme-stats.vercel.app/api?username=javiiazagra&theme=one_dark_pro&show_icons=true&locale=en"
+                alt="javiiazagra"
+              />
+            </p>
+
+            <p align="center">
+              <img
+                align="center"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=javiiazagra&theme=one_dark_pro"
+                alt="javiiazagra"
+              />
+            </p>
+
+            <p align="center">
+              {" "}
+              <img
+                src="https://komarev.com/ghpvc/?username=javiiazagra&label=Profile%20views&color=0e75b6&style=flat"
+                alt="javiiazagra"
+              />
+            </p>
+            <p align="left"></p>
+          </div>
         </div>
+        <div className="overview--right__table">{/* <Table /> */}</div>
       </div>
     </div>
   );

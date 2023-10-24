@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+
+  &--logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    fill: #6f7680;
+    color: #6f7680;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  &--links {
+    color: #2f81f7;
+
+    ul {
+      display: flex;
+      gap: 40px;
+      font-size: 12px;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

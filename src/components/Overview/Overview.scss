@@ -11,15 +11,20 @@
     color: white;
 
     img {
-      border-radius: 50%;
+      border-radius: 100%;
       width: 296px;
     }
 
     &__names {
-      line-height: 8px;
+      /* line-height: 20px; */
+      padding-bottom: 16px;
+      padding-top: 20px;
       h3 {
         color: #7d8491;
         font-weight: 400;
+      }
+      p {
+        padding-top: 20px;
       }
     }
 
@@ -30,6 +35,7 @@
       justify-content: center;
       align-items: center;
       font-weight: 600;
+      padding-bottom: 20px;
     }
 
     button {
@@ -43,12 +49,14 @@
     button:hover {
       background-color: #30363d;
       border: #8b949e 1px solid;
+      cursor: pointer;
     }
 
     &__stats {
       display: flex;
       align-items: center;
       gap: 5px;
+      padding-bottom: 20px;
 
       span {
         font-weight: 700;
@@ -60,6 +68,16 @@
         font-size: 14px;
       }
 
+      p:hover {
+        cursor: pointer;
+        color: #2f81f7;
+        svg {
+          fill: #2f81f7;
+        }
+        span {
+          color: #2f81f7;
+        }
+      }
       svg {
         fill: #7d8491;
       }
@@ -92,8 +110,10 @@
     &__sponsors {
       display: flex;
       flex-direction: column;
+      padding-top: 15px;
       p {
         font-weight: 600;
+        padding-bottom: 10px;
       }
       img {
         width: 35px;
@@ -102,8 +122,15 @@
 
     &__achievements {
       width: 296px;
+      padding-top: 15px;
       p {
         font-weight: 600;
+        padding-bottom: 10px;
+      }
+      p:hover {
+        color: #2f81f7;
+        cursor: pointer;
+        text-decoration: underline;
       }
       img {
         width: 64px;
@@ -113,14 +140,16 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         p {
-          border: 1px solid greenyellow;
+          border: 1px solid #3fb950;
           border-radius: 20px;
           width: 41px;
           text-align: center;
-          color: greenyellow;
+          color: #3fb950;
           font-size: 12px;
-          font-weight: 400;
+          font-weight: 300;
           padding: 2px;
         }
         a {
@@ -135,8 +164,10 @@
     }
 
     &__organizations {
+      padding-top: 15px;
       p {
         font-weight: 600;
+        padding-bottom: 10px;
       }
       img {
         width: 32px;
@@ -157,13 +188,18 @@
       gap: 10px;
       border: 1px solid #393c42;
       border-radius: 7px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-top: 13px;
+
+      img {
+        padding-bottom: 15px;
+      }
 
       p {
-        color: white;
         font-size: 12px;
+        font-family: monospace;
+        padding-bottom: 10px;
+        color: #e6edf3;
       }
       span {
         color: #7d8491;
@@ -181,6 +217,7 @@
 
       &__info {
         color: white;
+        padding-left: 30px;
 
         span {
           background-color: #343843;
@@ -199,12 +236,21 @@
         a {
           text-decoration: none;
           color: rgb(8, 143, 239);
+          text-decoration: underline;
         }
       }
     }
 
+    &__panels {
+      padding-top: 20px;
+      img {
+        padding-bottom: 20px;
+        cursor: pointer;
+      }
+    }
+
     &__pinned {
-      color: white;
+      color: #e6edf3;
       padding-top: 20px;
 
       h2 {
@@ -218,71 +264,105 @@
         flex-wrap: wrap;
         flex-direction: row;
         gap: 16px;
-
-        &__panels {
-          width: 406px;
-          height: 102px;
-          border-radius: 7px;
-          border: 1px solid #393c42;
-          padding: 16px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-
-          &__title {
-            padding-top: 8px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 7px;
-            fill: #7d8590;
-            font-size: 14px;
-            color: #2f81f7;
-
-            span {
-              color: #828995;
-              border-radius: 16px;
-              font-size: 11.9px;
-              border: #474b52 1px solid;
-              padding: 1.4px 5.9px;
-            }
-          }
-
-          &__info {
-            padding-top: 10px;
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-            color: #7d8590;
-          }
-
-          &__more {
-            font-size: 12px;
-            color: #7d8590;
-            display: flex;
-            align-items: center;
-            fill: #7d8590;
-            gap: 20px;
-
-            svg:hover {
-              fill: #2f81f7;
-            }
-
-            span {
-              position: relative;
-              top: 1px;
-              display: inline-block;
-              width: 12px;
-              height: 12px;
-              border-radius: 50%;
-              border: 1px solid yellow;
-              background-color: yellow;
-            }
-          }
-        }
+        padding-top: 10px;
+        color: #e6edf3;
       }
     }
   }
+}
+
+.pinned {
+  width: 406px;
+  height: 102px;
+  border-radius: 7px;
+  border: 1px solid #393c42;
+  display: flex;
+  padding: 16px;
+  fill: #7d8590;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      span {
+        color: #828995;
+        border-radius: 16px;
+        font-size: 11.9px;
+        border: #474b52 1px solid;
+        padding: 1.4px 5.9px;
+      }
+      p {
+        font-size: 14px;
+        color: #2f81f7;
+        font-weight: 500;
+      }
+
+      p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    &__info {
+      font-size: 12px;
+      color: #7d8590;
+    }
+
+    &__more {
+      font-size: 12px;
+      color: #7d8590;
+      display: flex;
+      gap: 8px;
+
+      .octicon {
+        padding-left: 10px;
+      }
+
+      .octicon:hover {
+        fill: #2f81f7;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.javascript {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+
+.typescript {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #3178c6;
+  background-color: #3178c6;
+}
+
+.python {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #3572a5;
+  background-color: #3572a5;
 }
 
 .line {

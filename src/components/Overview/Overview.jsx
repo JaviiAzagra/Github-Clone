@@ -11,8 +11,8 @@ const Overview = () => {
           <div className="overview--left__names">
             <h2>Javier Azagra</h2>
             <h3>JaviiAzagra</h3>
+            <p>Full Stack Developer Student</p>
           </div>
-          <p>Full Stack Developer Student</p>
           <div className="overview--left__button">
             <button>Edit profile</button>
             <button>Sponsors dashboard</button>
@@ -166,14 +166,14 @@ const Overview = () => {
             <div className="overview--right__readmeprofile__info">
               <ul>
                 <li>
-                  Checkout my
+                  Checkout my{" "}
                   <a
                     href="https://javierazagra.com"
                     rel="noreferrer"
                     target="_blank"
                   >
                     portfolio
-                  </a>
+                  </a>{" "}
                   website!
                 </li>
                 <li>🏢 Software Engineer (Full Stack), in Madrid ESP</li>
@@ -182,7 +182,12 @@ const Overview = () => {
                   <span>SCSS</span>, <span>Angular</span>, <span>Node</span> ...
                 </li>
                 <li>⚡ I enjoy travel, driving, sports, and programming ;)</li>
-                <li>📫 Reach out to me: javiazagra12@gmail.com</li>
+                <li>
+                  📫 Reach out to me:{" "}
+                  <a href="mailto:ejaviazagra12@gmail.com">
+                    javiazagra12@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="overview--right__panels">
@@ -210,7 +215,6 @@ const Overview = () => {
               </p>
 
               <p align="center">
-                {" "}
                 <img
                   src="https://komarev.com/ghpvc/?username=javiiazagra&label=Profile%20views&color=0e75b6&style=flat"
                   alt="javiiazagra"
@@ -222,9 +226,9 @@ const Overview = () => {
           <div className="overview--right__pinned">
             <h2>Pinned</h2>
             <div className="overview--right__pinned__container">
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -236,35 +240,36 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
-                  </p>
-                  <p className="overview--right__pinned__container__panels__info">
+                    <p>Template-Node.js</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
                     💎 A template node with cloudinary and authentication.
                   </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="javascript"></span>
+                    <span>JavaScript</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>
 
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -276,35 +281,37 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
+                    <p>javierazagra.com</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
+                    🙂 My personal website made using TypeScript, CSS, SCSS, and
+                    deployed on Vercel.
                   </p>
-                  <p className="overview--right__pinned__container__panels__info">
-                    💎 A template node with cloudinary and authentication.
-                  </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="typescript"></span>
+                    <span>TypeScript</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>
 
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -316,35 +323,36 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
+                    <p>Porsche-Supercup</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
+                    🎮🏎️ A little Porsche Supercup game created with python
                   </p>
-                  <p className="overview--right__pinned__container__panels__info">
-                    💎 A template node with cloudinary and authentication.
-                  </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="python"></span>
+                    <span>Python</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>
 
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -356,35 +364,37 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
+                    <p>Four-Corners</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
+                    🏪 A sneaker and clothing store created with Angular.
+                    Backend: https://github.com/JaviiAzagra/sneakers-backend
                   </p>
-                  <p className="overview--right__pinned__container__panels__info">
-                    💎 A template node with cloudinary and authentication.
-                  </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="typescript"></span>
+                    <span>TypeScript</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>
 
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -396,35 +406,37 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
+                    <p>BOT-DISCORD</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
+                    🤖 A discord bot with roles, music, tickets and admins
+                    commands.
                   </p>
-                  <p className="overview--right__pinned__container__panels__info">
-                    💎 A template node with cloudinary and authentication.
-                  </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="javascript"></span>
+                    <span>JavaScript</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>
 
-              <div className="overview--right__pinned__container__panels">
-                <div>
-                  <p className="overview--right__pinned__container__panels__title">
+              <div className="pinned">
+                <div className="pinned--container">
+                  <div className="pinned--container__title">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -436,28 +448,29 @@ const Overview = () => {
                     >
                       <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>
-                    Template-Node.js <span>Public</span>
+                    <p>Luxury-Cars-Angular-Project</p>
+                    <span>Public</span>
+                  </div>
+                  <p className="pinned--container__info">
+                    🚗 A luxury cars rental page created with Angular.
                   </p>
-                  <p className="overview--right__pinned__container__panels__info">
-                    💎 A template node with cloudinary and authentication.
-                  </p>
-                  <p className="overview--right__pinned__container__panels__more">
-                    <p>
-                      <span></span>
-                      {"  "}JavaScript
-                    </p>
-                    <svg
-                      aria-label="stars"
-                      role="img"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      version="1.1"
-                      width="16"
-                      data-view-component="true"
-                      class="octicon octicon-star"
-                    >
-                      <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-                    </svg>
+                  <p className="pinned--container__more">
+                    <span className="typescript"></span>
+                    <span>TypeScript</span>
+                    <span>
+                      <svg
+                        aria-label="stars"
+                        role="img"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        version="1.1"
+                        width="16"
+                        data-view-component="true"
+                        class="octicon octicon-star"
+                      >
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                    </span>
                   </p>
                 </div>
               </div>

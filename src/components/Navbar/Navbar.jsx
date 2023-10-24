@@ -103,7 +103,7 @@ const Navbar = () => {
               </svg>
             </button>
             <img
-              src="https://avatars.githubusercontent.com/u/74573174?v=4"
+              src="./assets/profile.png"
               alt="profilepicture"
               size="32"
               height="32"

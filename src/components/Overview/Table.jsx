@@ -1,4 +1,5 @@
 import React from "react";
+import "./Table.scss";
 
 const Table = () => {
   return (
@@ -8,96 +9,186 @@ const Table = () => {
         data-hydro-click-hmac="ce3ac451b5ca1e012c3280ccf8c84a254626bcc57754f6c9da19256da0eeb716"
         role="grid"
         aria-readonly="true"
-        class="ContributionCalendar-grid js-calendar-graph-table"
+        class="ContributionCalendar-grid js-calendar-graph-table" /* style={{border-spacing: "3px", overflow: "hidden", position: "relative"}} */
       >
         <caption class="sr-only">Contribution Graph</caption>
 
         <thead>
-          <tr>
-            <td>
+          <tr style={{ height: "13px" }}>
+            <td style={{ width: "28px" }}>
               <span class="sr-only">Day of Week</span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="2">
+            <td
+              class="ContributionCalendar-label"
+              colspan="2"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">October</span>
-              <span aria-hidden="true">Oct</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Oct
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">November</span>
-              <span aria-hidden="true">Nov</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Nov
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">December</span>
-              <span aria-hidden="true">Dec</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Dec
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="5">
+            <td
+              class="ContributionCalendar-label"
+              colspan="5"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">January</span>
-              <span aria-hidden="true">Jan</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Jan
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">February</span>
-              <span aria-hidden="true">Feb</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Feb
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">March</span>
-              <span aria-hidden="true">Mar</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Mar
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="5">
+            <td
+              class="ContributionCalendar-label"
+              colspan="5"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">April</span>
-              <span aria-hidden="true">Apr</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Apr
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">May</span>
-              <span aria-hidden="true">May</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                May
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">June</span>
-              <span aria-hidden="true">Jun</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Jun
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="5">
+            <td
+              class="ContributionCalendar-label"
+              colspan="5"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">July</span>
-              <span aria-hidden="true">Jul</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Jul
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">August</span>
-              <span aria-hidden="true">Aug</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Aug
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">September</span>
-              <span aria-hidden="true">Sep</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Sep
+              </span>
             </td>
 
-            <td class="ContributionCalendar-label" colspan="4">
+            <td
+              class="ContributionCalendar-label"
+              colspan="4"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">October</span>
-              <span aria-hidden="true">Oct</span>
+              <span aria-hidden="true" style={{ position: "absolute", top: 0 }}>
+                Oct
+              </span>
             </td>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Sunday</span>
-              <span aria-hidden="true">Sun</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Sun
+              </span>
             </td>
 
             <td
               class="ContributionCalendar-day"
-              tabindex="0"
+              tabindex="-1"
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-10-23"
               data-level="0"
             >
@@ -109,6 +200,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-30"
               data-level="1"
             >
@@ -120,6 +212,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-06"
               data-level="1"
             >
@@ -131,6 +224,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-13"
               data-level="1"
             >
@@ -142,6 +236,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-20"
               data-level="1"
             >
@@ -153,6 +248,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-27"
               data-level="0"
             >
@@ -164,6 +260,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-4"
+              style={{ width: "10px" }}
               data-date="2022-12-04"
               data-level="4"
             >
@@ -175,6 +272,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-11"
               data-level="0"
             >
@@ -186,6 +284,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-18"
               data-level="0"
             >
@@ -197,6 +296,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-25"
               data-level="0"
             >
@@ -208,6 +308,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-01"
               data-level="0"
             >
@@ -219,6 +320,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-08"
               data-level="0"
             >
@@ -230,6 +332,7 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-15"
               data-level="0"
             >
@@ -241,6 +344,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-22"
               data-level="0"
             >
@@ -252,6 +356,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-29"
               data-level="0"
             >
@@ -263,6 +368,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-05"
               data-level="0"
             >
@@ -274,6 +380,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-12"
               data-level="0"
             >
@@ -285,6 +392,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-19"
               data-level="0"
             >
@@ -296,6 +404,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-26"
               data-level="0"
             >
@@ -307,6 +416,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-05"
               data-level="0"
             >
@@ -318,6 +428,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-12"
               data-level="0"
             >
@@ -329,6 +440,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-19"
               data-level="0"
             >
@@ -340,6 +452,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-26"
               data-level="0"
             >
@@ -351,6 +464,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-02"
               data-level="0"
             >
@@ -362,6 +476,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-09"
               data-level="0"
             >
@@ -373,6 +488,7 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-16"
               data-level="0"
             >
@@ -384,10 +500,11 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-23"
               data-level="1"
             >
-              <span class="sr-only">5 contributions on April 23rd.</span>
+              <span class="sr-only">6 contributions on April 23rd.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -395,6 +512,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-30"
               data-level="0"
             >
@@ -406,6 +524,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-07"
               data-level="0"
             >
@@ -417,6 +536,7 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-2"
+              style={{ width: "10px" }}
               data-date="2023-05-14"
               data-level="2"
             >
@@ -428,6 +548,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-21"
               data-level="0"
             >
@@ -439,6 +560,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-28"
               data-level="0"
             >
@@ -450,6 +572,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-04"
               data-level="0"
             >
@@ -461,6 +584,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-11"
               data-level="0"
             >
@@ -472,6 +596,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-18"
               data-level="0"
             >
@@ -483,6 +608,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-25"
               data-level="0"
             >
@@ -494,6 +620,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-02"
               data-level="0"
             >
@@ -505,6 +632,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-09"
               data-level="0"
             >
@@ -516,6 +644,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-16"
               data-level="0"
             >
@@ -527,6 +656,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-23"
               data-level="0"
             >
@@ -538,6 +668,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-30"
               data-level="0"
             >
@@ -549,6 +680,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-06"
               data-level="0"
             >
@@ -560,6 +692,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-13"
               data-level="0"
             >
@@ -571,6 +704,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-20"
               data-level="0"
             >
@@ -582,6 +716,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-27"
               data-level="0"
             >
@@ -593,6 +728,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-03"
               data-level="0"
             >
@@ -604,6 +740,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-10"
               data-level="0"
             >
@@ -615,6 +752,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-17"
               data-level="0"
             >
@@ -626,6 +764,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-24"
               data-level="0"
             >
@@ -637,6 +776,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-01"
               data-level="0"
             >
@@ -648,6 +788,7 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-08"
               data-level="0"
             >
@@ -659,6 +800,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-15"
               data-level="0"
             >
@@ -670,16 +812,28 @@ const Table = () => {
               data-ix="52"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-22"
               data-level="1"
             >
               <span class="sr-only">3 contributions on October 22nd.</span>
             </td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Monday</span>
-              <span aria-hidden="true">Mon</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Mon
+              </span>
             </td>
 
             <td
@@ -688,6 +842,7 @@ const Table = () => {
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-10-24"
               data-level="0"
             >
@@ -699,6 +854,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-31"
               data-level="1"
             >
@@ -710,6 +866,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-2"
+              style={{ width: "10px" }}
               data-date="2022-11-07"
               data-level="2"
             >
@@ -721,6 +878,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-14"
               data-level="1"
             >
@@ -732,6 +890,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-21"
               data-level="1"
             >
@@ -743,6 +902,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-28"
               data-level="0"
             >
@@ -754,6 +914,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-3"
+              style={{ width: "10px" }}
               data-date="2022-12-05"
               data-level="3"
             >
@@ -765,6 +926,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-12"
               data-level="1"
             >
@@ -776,6 +938,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-19"
               data-level="1"
             >
@@ -787,6 +950,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-26"
               data-level="1"
             >
@@ -798,6 +962,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-02"
               data-level="0"
             >
@@ -809,6 +974,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-09"
               data-level="0"
             >
@@ -820,6 +986,7 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-16"
               data-level="0"
             >
@@ -831,6 +998,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-23"
               data-level="1"
             >
@@ -842,6 +1010,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-30"
               data-level="0"
             >
@@ -853,6 +1022,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-02-06"
               data-level="1"
             >
@@ -864,6 +1034,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-13"
               data-level="0"
             >
@@ -875,6 +1046,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-20"
               data-level="0"
             >
@@ -886,6 +1058,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-27"
               data-level="0"
             >
@@ -897,6 +1070,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-06"
               data-level="0"
             >
@@ -908,6 +1082,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-13"
               data-level="1"
             >
@@ -919,6 +1094,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-20"
               data-level="0"
             >
@@ -930,6 +1106,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-27"
               data-level="0"
             >
@@ -941,6 +1118,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-03"
               data-level="0"
             >
@@ -952,6 +1130,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-10"
               data-level="0"
             >
@@ -963,6 +1142,7 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-17"
               data-level="0"
             >
@@ -974,6 +1154,7 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-24"
               data-level="1"
             >
@@ -985,6 +1166,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-01"
               data-level="0"
             >
@@ -996,6 +1178,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-08"
               data-level="0"
             >
@@ -1007,6 +1190,7 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-15"
               data-level="1"
             >
@@ -1018,6 +1202,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-22"
               data-level="0"
             >
@@ -1029,6 +1214,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-29"
               data-level="0"
             >
@@ -1040,6 +1226,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-05"
               data-level="0"
             >
@@ -1051,6 +1238,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-12"
               data-level="0"
             >
@@ -1062,6 +1250,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-19"
               data-level="0"
             >
@@ -1073,6 +1262,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-26"
               data-level="0"
             >
@@ -1084,6 +1274,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-03"
               data-level="0"
             >
@@ -1095,6 +1286,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-10"
               data-level="0"
             >
@@ -1106,6 +1298,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-17"
               data-level="0"
             >
@@ -1117,6 +1310,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-24"
               data-level="0"
             >
@@ -1128,6 +1322,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-31"
               data-level="0"
             >
@@ -1139,6 +1334,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-07"
               data-level="0"
             >
@@ -1150,6 +1346,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-14"
               data-level="0"
             >
@@ -1161,6 +1358,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-21"
               data-level="0"
             >
@@ -1172,6 +1370,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-28"
               data-level="0"
             >
@@ -1183,6 +1382,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-04"
               data-level="0"
             >
@@ -1194,6 +1394,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-11"
               data-level="0"
             >
@@ -1205,6 +1406,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-18"
               data-level="0"
             >
@@ -1216,6 +1418,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-25"
               data-level="0"
             >
@@ -1227,6 +1430,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-02"
               data-level="0"
             >
@@ -1238,6 +1442,7 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-09"
               data-level="0"
             >
@@ -1249,6 +1454,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-16"
               data-level="0"
             >
@@ -1260,16 +1466,28 @@ const Table = () => {
               data-ix="52"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-23"
               data-level="1"
             >
               <span class="sr-only">1 contribution on October 23rd.</span>
             </td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Tuesday</span>
-              <span aria-hidden="true">Tue</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Tue
+              </span>
             </td>
 
             <td
@@ -1278,6 +1496,7 @@ const Table = () => {
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-25"
               data-level="1"
             >
@@ -1289,6 +1508,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-01"
               data-level="1"
             >
@@ -1300,6 +1520,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-08"
               data-level="0"
             >
@@ -1311,6 +1532,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-15"
               data-level="1"
             >
@@ -1322,6 +1544,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-22"
               data-level="1"
             >
@@ -1333,6 +1556,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-29"
               data-level="0"
             >
@@ -1344,6 +1568,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-06"
               data-level="0"
             >
@@ -1355,6 +1580,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-13"
               data-level="1"
             >
@@ -1366,6 +1592,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-20"
               data-level="0"
             >
@@ -1377,6 +1604,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-27"
               data-level="0"
             >
@@ -1388,6 +1616,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-03"
               data-level="0"
             >
@@ -1399,6 +1628,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-10"
               data-level="1"
             >
@@ -1409,11 +1639,12 @@ const Table = () => {
               tabindex="-1"
               data-ix="12"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-0"
+              aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-17"
-              data-level="0"
+              data-level="1"
             >
-              <span class="sr-only">No contributions on January 17th.</span>
+              <span class="sr-only">1 contribution on January 17th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -1421,6 +1652,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-24"
               data-level="1"
             >
@@ -1432,6 +1664,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-31"
               data-level="0"
             >
@@ -1443,6 +1676,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-07"
               data-level="0"
             >
@@ -1454,6 +1688,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-14"
               data-level="0"
             >
@@ -1465,6 +1700,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-21"
               data-level="0"
             >
@@ -1476,6 +1712,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-28"
               data-level="0"
             >
@@ -1487,6 +1724,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-07"
               data-level="1"
             >
@@ -1498,6 +1736,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-14"
               data-level="0"
             >
@@ -1509,6 +1748,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-21"
               data-level="0"
             >
@@ -1520,6 +1760,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-28"
               data-level="0"
             >
@@ -1531,6 +1772,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-04"
               data-level="0"
             >
@@ -1542,6 +1784,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-11"
               data-level="0"
             >
@@ -1552,22 +1795,24 @@ const Table = () => {
               tabindex="-1"
               data-ix="25"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-0"
+              aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-18"
-              data-level="0"
+              data-level="1"
             >
-              <span class="sr-only">No contributions on April 18th.</span>
+              <span class="sr-only">1 contribution on April 18th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
               tabindex="-1"
               data-ix="26"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-1"
+              aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-25"
-              data-level="1"
+              data-level="0"
             >
-              <span class="sr-only">1 contribution on April 25th.</span>
+              <span class="sr-only">No contributions on April 25th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -1575,6 +1820,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-02"
               data-level="0"
             >
@@ -1586,6 +1832,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-09"
               data-level="0"
             >
@@ -1597,6 +1844,7 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-16"
               data-level="0"
             >
@@ -1608,6 +1856,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-23"
               data-level="0"
             >
@@ -1619,6 +1868,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-30"
               data-level="0"
             >
@@ -1626,10 +1876,11 @@ const Table = () => {
             </td>
             <td
               class="ContributionCalendar-day"
-              tabindex="-1"
+              tabindex="0"
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-06"
               data-level="0"
             >
@@ -1641,6 +1892,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-13"
               data-level="0"
             >
@@ -1652,6 +1904,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-20"
               data-level="0"
             >
@@ -1663,6 +1916,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-27"
               data-level="0"
             >
@@ -1674,6 +1928,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-04"
               data-level="0"
             >
@@ -1685,6 +1940,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-11"
               data-level="0"
             >
@@ -1696,6 +1952,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-18"
               data-level="0"
             >
@@ -1707,6 +1964,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-25"
               data-level="0"
             >
@@ -1718,6 +1976,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-01"
               data-level="0"
             >
@@ -1729,6 +1988,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-08"
               data-level="0"
             >
@@ -1740,6 +2000,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-15"
               data-level="0"
             >
@@ -1751,6 +2012,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-22"
               data-level="0"
             >
@@ -1762,6 +2024,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-29"
               data-level="0"
             >
@@ -1773,6 +2036,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-05"
               data-level="0"
             >
@@ -1784,6 +2048,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-12"
               data-level="0"
             >
@@ -1795,6 +2060,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-19"
               data-level="0"
             >
@@ -1806,6 +2072,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-26"
               data-level="0"
             >
@@ -1817,6 +2084,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-03"
               data-level="0"
             >
@@ -1828,6 +2096,7 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-10"
               data-level="1"
             >
@@ -1839,6 +2108,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-17"
               data-level="1"
             >
@@ -1849,17 +2119,29 @@ const Table = () => {
               tabindex="-1"
               data-ix="52"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-1"
+              aria-describedby="contribution-graph-legend-level-2"
+              style={{ width: "10px" }}
               data-date="2023-10-24"
-              data-level="1"
+              data-level="2"
             >
-              <span class="sr-only">2 contributions on October 24th.</span>
+              <span class="sr-only">16 contributions on October 24th.</span>
             </td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Wednesday</span>
-              <span aria-hidden="true">Wed</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Wed
+              </span>
             </td>
 
             <td
@@ -1867,11 +2149,12 @@ const Table = () => {
               tabindex="-1"
               data-ix="0"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-0"
+              aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-26"
-              data-level="0"
+              data-level="1"
             >
-              <span class="sr-only">No contributions on October 26th.</span>
+              <span class="sr-only">1 contribution on October 26th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -1879,6 +2162,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-02"
               data-level="1"
             >
@@ -1890,6 +2174,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-09"
               data-level="0"
             >
@@ -1901,6 +2186,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-16"
               data-level="0"
             >
@@ -1912,6 +2198,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-23"
               data-level="0"
             >
@@ -1923,6 +2210,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-30"
               data-level="0"
             >
@@ -1934,6 +2222,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-07"
               data-level="1"
             >
@@ -1945,6 +2234,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-14"
               data-level="1"
             >
@@ -1956,6 +2246,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-21"
               data-level="1"
             >
@@ -1967,6 +2258,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-28"
               data-level="0"
             >
@@ -1978,6 +2270,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-04"
               data-level="0"
             >
@@ -1989,6 +2282,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-11"
               data-level="0"
             >
@@ -2000,10 +2294,11 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-18"
               data-level="1"
             >
-              <span class="sr-only">5 contributions on January 18th.</span>
+              <span class="sr-only">4 contributions on January 18th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -2011,6 +2306,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-25"
               data-level="1"
             >
@@ -2022,6 +2318,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-01"
               data-level="0"
             >
@@ -2033,6 +2330,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-08"
               data-level="0"
             >
@@ -2044,6 +2342,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-02-15"
               data-level="1"
             >
@@ -2055,6 +2354,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-22"
               data-level="0"
             >
@@ -2066,6 +2366,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-01"
               data-level="0"
             >
@@ -2077,6 +2378,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-08"
               data-level="1"
             >
@@ -2088,6 +2390,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-15"
               data-level="1"
             >
@@ -2099,6 +2402,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-22"
               data-level="0"
             >
@@ -2110,6 +2414,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-29"
               data-level="0"
             >
@@ -2121,6 +2426,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-05"
               data-level="0"
             >
@@ -2132,6 +2438,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-12"
               data-level="0"
             >
@@ -2143,10 +2450,11 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-19"
               data-level="1"
             >
-              <span class="sr-only">3 contributions on April 19th.</span>
+              <span class="sr-only">2 contributions on April 19th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -2154,6 +2462,7 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-26"
               data-level="1"
             >
@@ -2165,6 +2474,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-03"
               data-level="0"
             >
@@ -2176,6 +2486,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-10"
               data-level="0"
             >
@@ -2187,6 +2498,7 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-17"
               data-level="0"
             >
@@ -2198,6 +2510,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-24"
               data-level="0"
             >
@@ -2209,6 +2522,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-31"
               data-level="0"
             >
@@ -2220,6 +2534,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-07"
               data-level="0"
             >
@@ -2231,6 +2546,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-14"
               data-level="0"
             >
@@ -2242,6 +2558,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-06-21"
               data-level="1"
             >
@@ -2253,6 +2570,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-28"
               data-level="0"
             >
@@ -2264,6 +2582,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-05"
               data-level="0"
             >
@@ -2275,6 +2594,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-12"
               data-level="0"
             >
@@ -2286,6 +2606,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-19"
               data-level="0"
             >
@@ -2297,6 +2618,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-26"
               data-level="0"
             >
@@ -2308,6 +2630,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-02"
               data-level="0"
             >
@@ -2319,6 +2642,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-09"
               data-level="0"
             >
@@ -2330,6 +2654,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-16"
               data-level="0"
             >
@@ -2341,6 +2666,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-23"
               data-level="0"
             >
@@ -2352,6 +2678,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-30"
               data-level="0"
             >
@@ -2363,6 +2690,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-06"
               data-level="0"
             >
@@ -2374,6 +2702,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-13"
               data-level="0"
             >
@@ -2385,6 +2714,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-20"
               data-level="0"
             >
@@ -2396,6 +2726,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-27"
               data-level="0"
             >
@@ -2407,6 +2738,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-04"
               data-level="0"
             >
@@ -2418,10 +2750,11 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-11"
               data-level="1"
             >
-              <span class="sr-only">4 contributions on October 11th.</span>
+              <span class="sr-only">5 contributions on October 11th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -2429,17 +2762,40 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-18"
               data-level="0"
             >
               <span class="sr-only">No contributions on October 18th.</span>
             </td>
-            <td></td>
+            <td
+              class="ContributionCalendar-day active"
+              tabindex="-1"
+              data-ix="52"
+              aria-selected="true"
+              aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
+              data-date="2023-10-25"
+              data-level="1"
+            >
+              <span class="sr-only">8 contributions on October 25th.</span>
+            </td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Thursday</span>
-              <span aria-hidden="true">Thu</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Thu
+              </span>
             </td>
 
             <td
@@ -2448,10 +2804,11 @@ const Table = () => {
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-27"
               data-level="1"
             >
-              <span class="sr-only">3 contributions on October 27th.</span>
+              <span class="sr-only">2 contributions on October 27th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -2459,6 +2816,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-2"
+              style={{ width: "10px" }}
               data-date="2022-11-03"
               data-level="2"
             >
@@ -2470,6 +2828,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-10"
               data-level="1"
             >
@@ -2481,6 +2840,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-17"
               data-level="0"
             >
@@ -2492,6 +2852,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-24"
               data-level="0"
             >
@@ -2503,6 +2864,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-01"
               data-level="1"
             >
@@ -2514,6 +2876,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-08"
               data-level="0"
             >
@@ -2525,6 +2888,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-15"
               data-level="1"
             >
@@ -2536,6 +2900,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-22"
               data-level="1"
             >
@@ -2547,6 +2912,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-29"
               data-level="0"
             >
@@ -2558,6 +2924,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-05"
               data-level="0"
             >
@@ -2569,6 +2936,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-12"
               data-level="1"
             >
@@ -2580,6 +2948,7 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-19"
               data-level="0"
             >
@@ -2591,6 +2960,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-26"
               data-level="0"
             >
@@ -2602,6 +2972,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-02-02"
               data-level="1"
             >
@@ -2613,6 +2984,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-09"
               data-level="0"
             >
@@ -2624,6 +2996,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-16"
               data-level="0"
             >
@@ -2635,6 +3008,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-23"
               data-level="0"
             >
@@ -2646,6 +3020,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-02"
               data-level="0"
             >
@@ -2657,6 +3032,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-09"
               data-level="1"
             >
@@ -2668,6 +3044,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-16"
               data-level="0"
             >
@@ -2679,6 +3056,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-23"
               data-level="0"
             >
@@ -2690,6 +3068,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-30"
               data-level="0"
             >
@@ -2701,6 +3080,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-06"
               data-level="0"
             >
@@ -2712,6 +3092,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-13"
               data-level="0"
             >
@@ -2723,6 +3104,7 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-20"
               data-level="0"
             >
@@ -2734,6 +3116,7 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-27"
               data-level="1"
             >
@@ -2745,6 +3128,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-04"
               data-level="1"
             >
@@ -2756,6 +3140,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-11"
               data-level="0"
             >
@@ -2766,11 +3151,12 @@ const Table = () => {
               tabindex="-1"
               data-ix="29"
               aria-selected="false"
-              aria-describedby="contribution-graph-legend-level-0"
+              aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-18"
-              data-level="0"
+              data-level="1"
             >
-              <span class="sr-only">No contributions on May 18th.</span>
+              <span class="sr-only">1 contribution on May 18th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -2778,6 +3164,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-25"
               data-level="0"
             >
@@ -2789,6 +3176,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-01"
               data-level="0"
             >
@@ -2800,6 +3188,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-08"
               data-level="0"
             >
@@ -2811,6 +3200,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-15"
               data-level="0"
             >
@@ -2822,6 +3212,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-22"
               data-level="0"
             >
@@ -2833,6 +3224,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-29"
               data-level="0"
             >
@@ -2844,6 +3236,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-06"
               data-level="0"
             >
@@ -2855,6 +3248,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-13"
               data-level="0"
             >
@@ -2866,6 +3260,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-20"
               data-level="0"
             >
@@ -2877,6 +3272,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-27"
               data-level="0"
             >
@@ -2888,6 +3284,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-03"
               data-level="0"
             >
@@ -2899,6 +3296,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-10"
               data-level="0"
             >
@@ -2910,6 +3308,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-17"
               data-level="0"
             >
@@ -2921,6 +3320,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-24"
               data-level="0"
             >
@@ -2932,6 +3332,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-08-31"
               data-level="1"
             >
@@ -2943,6 +3344,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-09-07"
               data-level="1"
             >
@@ -2954,6 +3356,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-14"
               data-level="0"
             >
@@ -2965,6 +3368,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-21"
               data-level="0"
             >
@@ -2976,6 +3380,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-28"
               data-level="0"
             >
@@ -2987,6 +3392,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-05"
               data-level="0"
             >
@@ -2998,10 +3404,11 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-12"
               data-level="1"
             >
-              <span class="sr-only">6 contributions on October 12th.</span>
+              <span class="sr-only">5 contributions on October 12th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -3009,6 +3416,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-19"
               data-level="1"
             >
@@ -3016,10 +3424,21 @@ const Table = () => {
             </td>
             <td></td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Friday</span>
-              <span aria-hidden="true">Fri</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": None, */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Fri
+              </span>
             </td>
 
             <td
@@ -3028,6 +3447,7 @@ const Table = () => {
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-10-28"
               data-level="0"
             >
@@ -3039,6 +3459,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-04"
               data-level="1"
             >
@@ -3050,6 +3471,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-11-11"
               data-level="1"
             >
@@ -3061,6 +3483,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-2"
+              style={{ width: "10px" }}
               data-date="2022-11-18"
               data-level="2"
             >
@@ -3072,6 +3495,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-25"
               data-level="0"
             >
@@ -3083,6 +3507,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-02"
               data-level="1"
             >
@@ -3094,6 +3519,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-09"
               data-level="1"
             >
@@ -3105,6 +3531,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-16"
               data-level="1"
             >
@@ -3116,6 +3543,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-23"
               data-level="0"
             >
@@ -3127,6 +3555,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-30"
               data-level="0"
             >
@@ -3138,6 +3567,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-06"
               data-level="0"
             >
@@ -3149,6 +3579,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-13"
               data-level="0"
             >
@@ -3160,6 +3591,7 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-20"
               data-level="0"
             >
@@ -3171,6 +3603,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-01-27"
               data-level="1"
             >
@@ -3182,6 +3615,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-03"
               data-level="0"
             >
@@ -3193,6 +3627,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-10"
               data-level="0"
             >
@@ -3204,6 +3639,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-17"
               data-level="0"
             >
@@ -3215,6 +3651,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-24"
               data-level="0"
             >
@@ -3226,6 +3663,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-03"
               data-level="0"
             >
@@ -3237,6 +3675,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-03-10"
               data-level="1"
             >
@@ -3248,6 +3687,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-17"
               data-level="0"
             >
@@ -3259,6 +3699,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-24"
               data-level="0"
             >
@@ -3270,6 +3711,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-31"
               data-level="0"
             >
@@ -3281,6 +3723,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-07"
               data-level="0"
             >
@@ -3292,6 +3735,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-14"
               data-level="0"
             >
@@ -3303,6 +3747,7 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-21"
               data-level="0"
             >
@@ -3314,6 +3759,7 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-28"
               data-level="1"
             >
@@ -3325,6 +3771,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-05"
               data-level="0"
             >
@@ -3336,6 +3783,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-12"
               data-level="0"
             >
@@ -3347,10 +3795,11 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-19"
               data-level="1"
             >
-              <span class="sr-only">5 contributions on May 19th.</span>
+              <span class="sr-only">4 contributions on May 19th.</span>
             </td>
             <td
               class="ContributionCalendar-day"
@@ -3358,6 +3807,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-26"
               data-level="0"
             >
@@ -3369,6 +3819,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-02"
               data-level="0"
             >
@@ -3380,6 +3831,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-09"
               data-level="0"
             >
@@ -3391,6 +3843,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-16"
               data-level="0"
             >
@@ -3402,6 +3855,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-23"
               data-level="0"
             >
@@ -3413,6 +3867,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-30"
               data-level="0"
             >
@@ -3424,6 +3879,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-07"
               data-level="0"
             >
@@ -3435,6 +3891,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-14"
               data-level="0"
             >
@@ -3446,6 +3903,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-21"
               data-level="0"
             >
@@ -3457,6 +3915,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-28"
               data-level="0"
             >
@@ -3468,6 +3927,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-04"
               data-level="0"
             >
@@ -3479,6 +3939,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-11"
               data-level="0"
             >
@@ -3490,6 +3951,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-18"
               data-level="0"
             >
@@ -3501,6 +3963,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-25"
               data-level="0"
             >
@@ -3512,6 +3975,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-01"
               data-level="0"
             >
@@ -3523,6 +3987,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-08"
               data-level="0"
             >
@@ -3534,6 +3999,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-15"
               data-level="0"
             >
@@ -3545,6 +4011,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-22"
               data-level="0"
             >
@@ -3556,6 +4023,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-29"
               data-level="0"
             >
@@ -3567,6 +4035,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-06"
               data-level="1"
             >
@@ -3578,6 +4047,7 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-13"
               data-level="0"
             >
@@ -3589,6 +4059,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-4"
+              style={{ width: "10px" }}
               data-date="2023-10-20"
               data-level="4"
             >
@@ -3596,10 +4067,21 @@ const Table = () => {
             </td>
             <td></td>
           </tr>
-          <tr>
-            <td class="ContributionCalendar-label">
+          <tr style={{ height: "10px" }}>
+            <td
+              class="ContributionCalendar-label"
+              style={{ position: "relative" }}
+            >
               <span class="sr-only">Saturday</span>
-              <span aria-hidden="true">Sat</span>
+              <span
+                aria-hidden="true"
+                style={{
+                  /* "clip-path": Circle(0), */ position: "absolute",
+                  bottom: "-3px",
+                }}
+              >
+                Sat
+              </span>
             </td>
 
             <td
@@ -3608,6 +4090,7 @@ const Table = () => {
               data-ix="0"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-10-29"
               data-level="1"
             >
@@ -3619,6 +4102,7 @@ const Table = () => {
               data-ix="1"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-05"
               data-level="0"
             >
@@ -3630,6 +4114,7 @@ const Table = () => {
               data-ix="2"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-12"
               data-level="0"
             >
@@ -3641,6 +4126,7 @@ const Table = () => {
               data-ix="3"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-19"
               data-level="0"
             >
@@ -3652,6 +4138,7 @@ const Table = () => {
               data-ix="4"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-11-26"
               data-level="0"
             >
@@ -3663,6 +4150,7 @@ const Table = () => {
               data-ix="5"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-4"
+              style={{ width: "10px" }}
               data-date="2022-12-03"
               data-level="4"
             >
@@ -3674,6 +4162,7 @@ const Table = () => {
               data-ix="6"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2022-12-10"
               data-level="1"
             >
@@ -3685,6 +4174,7 @@ const Table = () => {
               data-ix="7"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-17"
               data-level="0"
             >
@@ -3696,6 +4186,7 @@ const Table = () => {
               data-ix="8"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-24"
               data-level="0"
             >
@@ -3707,6 +4198,7 @@ const Table = () => {
               data-ix="9"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2022-12-31"
               data-level="0"
             >
@@ -3718,6 +4210,7 @@ const Table = () => {
               data-ix="10"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-07"
               data-level="0"
             >
@@ -3729,6 +4222,7 @@ const Table = () => {
               data-ix="11"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-14"
               data-level="0"
             >
@@ -3740,6 +4234,7 @@ const Table = () => {
               data-ix="12"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-21"
               data-level="0"
             >
@@ -3751,6 +4246,7 @@ const Table = () => {
               data-ix="13"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-01-28"
               data-level="0"
             >
@@ -3762,6 +4258,7 @@ const Table = () => {
               data-ix="14"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-04"
               data-level="0"
             >
@@ -3773,6 +4270,7 @@ const Table = () => {
               data-ix="15"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-11"
               data-level="0"
             >
@@ -3784,6 +4282,7 @@ const Table = () => {
               data-ix="16"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-18"
               data-level="0"
             >
@@ -3795,6 +4294,7 @@ const Table = () => {
               data-ix="17"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-02-25"
               data-level="0"
             >
@@ -3806,6 +4306,7 @@ const Table = () => {
               data-ix="18"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-04"
               data-level="0"
             >
@@ -3817,6 +4318,7 @@ const Table = () => {
               data-ix="19"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-11"
               data-level="0"
             >
@@ -3828,6 +4330,7 @@ const Table = () => {
               data-ix="20"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-18"
               data-level="0"
             >
@@ -3839,6 +4342,7 @@ const Table = () => {
               data-ix="21"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-03-25"
               data-level="0"
             >
@@ -3850,6 +4354,7 @@ const Table = () => {
               data-ix="22"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-01"
               data-level="0"
             >
@@ -3861,6 +4366,7 @@ const Table = () => {
               data-ix="23"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-08"
               data-level="0"
             >
@@ -3872,6 +4378,7 @@ const Table = () => {
               data-ix="24"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-15"
               data-level="0"
             >
@@ -3883,6 +4390,7 @@ const Table = () => {
               data-ix="25"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-04-22"
               data-level="1"
             >
@@ -3894,6 +4402,7 @@ const Table = () => {
               data-ix="26"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-04-29"
               data-level="0"
             >
@@ -3905,6 +4414,7 @@ const Table = () => {
               data-ix="27"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-06"
               data-level="1"
             >
@@ -3916,6 +4426,7 @@ const Table = () => {
               data-ix="28"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-13"
               data-level="0"
             >
@@ -3927,6 +4438,7 @@ const Table = () => {
               data-ix="29"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-05-20"
               data-level="1"
             >
@@ -3938,6 +4450,7 @@ const Table = () => {
               data-ix="30"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-05-27"
               data-level="0"
             >
@@ -3949,6 +4462,7 @@ const Table = () => {
               data-ix="31"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-03"
               data-level="0"
             >
@@ -3960,6 +4474,7 @@ const Table = () => {
               data-ix="32"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-10"
               data-level="0"
             >
@@ -3971,6 +4486,7 @@ const Table = () => {
               data-ix="33"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-06-17"
               data-level="0"
             >
@@ -3982,6 +4498,7 @@ const Table = () => {
               data-ix="34"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-06-24"
               data-level="1"
             >
@@ -3993,6 +4510,7 @@ const Table = () => {
               data-ix="35"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-01"
               data-level="0"
             >
@@ -4004,6 +4522,7 @@ const Table = () => {
               data-ix="36"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-08"
               data-level="0"
             >
@@ -4015,6 +4534,7 @@ const Table = () => {
               data-ix="37"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-15"
               data-level="0"
             >
@@ -4026,6 +4546,7 @@ const Table = () => {
               data-ix="38"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-22"
               data-level="0"
             >
@@ -4037,6 +4558,7 @@ const Table = () => {
               data-ix="39"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-07-29"
               data-level="0"
             >
@@ -4048,6 +4570,7 @@ const Table = () => {
               data-ix="40"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-05"
               data-level="0"
             >
@@ -4059,6 +4582,7 @@ const Table = () => {
               data-ix="41"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-12"
               data-level="0"
             >
@@ -4070,6 +4594,7 @@ const Table = () => {
               data-ix="42"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-19"
               data-level="0"
             >
@@ -4081,6 +4606,7 @@ const Table = () => {
               data-ix="43"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-08-26"
               data-level="0"
             >
@@ -4092,6 +4618,7 @@ const Table = () => {
               data-ix="44"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-02"
               data-level="0"
             >
@@ -4103,6 +4630,7 @@ const Table = () => {
               data-ix="45"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-09"
               data-level="0"
             >
@@ -4114,6 +4642,7 @@ const Table = () => {
               data-ix="46"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-16"
               data-level="0"
             >
@@ -4125,6 +4654,7 @@ const Table = () => {
               data-ix="47"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-23"
               data-level="0"
             >
@@ -4136,6 +4666,7 @@ const Table = () => {
               data-ix="48"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-09-30"
               data-level="0"
             >
@@ -4147,6 +4678,7 @@ const Table = () => {
               data-ix="49"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-07"
               data-level="0"
             >
@@ -4158,6 +4690,7 @@ const Table = () => {
               data-ix="50"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-0"
+              style={{ width: "10px" }}
               data-date="2023-10-14"
               data-level="0"
             >
@@ -4169,6 +4702,7 @@ const Table = () => {
               data-ix="51"
               aria-selected="false"
               aria-describedby="contribution-graph-legend-level-1"
+              style={{ width: "10px" }}
               data-date="2023-10-21"
               data-level="1"
             >

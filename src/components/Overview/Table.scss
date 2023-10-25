@@ -1,0 +1,31 @@
+.ContributionCalendar-day[data-level="1"] {
+  fill: greenyellow;
+  background-color: greenyellow;
+  outline: 1px solid greenyellow;
+}
+.ContributionCalendar-day[data-level="2"] {
+  fill: greenyellow;
+  background-color: greenyellow;
+  outline: 1px solid greenyellow;
+}
+.ContributionCalendar-day[data-level="3"] {
+  fill: greenyellow;
+  background-color: greenyellow;
+  outline: 1px solid greenyellow;
+}
+.ContributionCalendar-day[data-level="4"] {
+  fill: greenyellow;
+  background-color: greenyellow;
+  outline: 1px solid greenyellow;
+}
+
+.ContributionCalendar-grid {
+  width: max-content;
+  border-collapse: separate;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
